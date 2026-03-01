@@ -2,6 +2,8 @@ Finansal Varlık ve Portföy Yönetim Sistemi
 
 
 Bu proje, kullanıcıların kripto para ve altın gibi finansal varlıklarını anlık piyasa fiyatlarıyla takip edebildiği, alım-satım işlemlerini kaydeden ve detaylı kâr/zarar analizi sunan **Full-Stack** bir web uygulamasıdır. 
+
+
 <img width="200" height="200" alt="Ekran görüntüsü 2026-03-01 200934" src="https://github.com/user-attachments/assets/884fbfb6-9161-459c-8f3e-269f75da8197" />
 <img width="200" height="200" alt="Ekran görüntüsü 2026-03-01 200924" src="https://github.com/user-attachments/assets/b8eccba4-61ba-4bfd-b473-045cb9dce3e0" />
 <img width="200" height="200" alt="Ekran görüntüsü 2026-03-01 200943" src="https://github.com/user-attachments/assets/2a45bbb6-31e1-49ae-8442-2e48b7ca99d4" />
