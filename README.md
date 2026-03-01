@@ -1,65 +1,57 @@
-Finansal Varlık ve Portföy Yönetim Sistemi
+Financial Asset and Portfolio Management System
 
+This project is a Full-Stack web application where users can track their financial assets such as cryptocurrency and gold with real-time market prices, record buy-sell transactions, and offers detailed profit/loss analysis.
 
-Bu proje, kullanıcıların kripto para ve altın gibi finansal varlıklarını anlık piyasa fiyatlarıyla takip edebildiği, alım-satım işlemlerini kaydeden ve detaylı kâr/zarar analizi sunan **Full-Stack** bir web uygulamasıdır. 
 
 <img alt="Ekran görüntüsü 2026-03-01 200943" src="https://github.com/user-attachments/assets/2a45bbb6-31e1-49ae-8442-2e48b7ca99d4" />
 <img alt="Ekran görüntüsü 2026-03-01 200934" src="https://github.com/user-attachments/assets/884fbfb6-9161-459c-8f3e-269f75da8197" />
 <img alt="Ekran görüntüsü 2026-03-01 200924" src="https://github.com/user-attachments/assets/b8eccba4-61ba-4bfd-b473-045cb9dce3e0" />
-
 <img alt="Ekran görüntüsü 2026-03-01 200839" src="https://github.com/user-attachments/assets/373cb506-21b4-4770-8ca5-3f6a90a74bf9" />
 <img alt="Ekran görüntüsü 2026-03-01 200906" src="https://github.com/user-attachments/assets/34329075-459c-4a39-8164-0e29af54e9b5" />
 
-Özellikle **Veritabanı Yönetim Sistemleri** dersi kazanımlarına uygun olarak geliştirilmiş olup; iş mantığının önemli bir kısmı (Business Logic) Oracle PL/SQL kullanılarak veritabanı katmanında çözülmüştür.
 
-Öne Çıkan Özellikler
+It was developed specifically in accordance with the learning outcomes of the Database Management Systems course; a significant part of the business logic is resolved at the database layer using Oracle PL/SQL.
 
-* **Canlı Veri Akışı:** CoinGecko API entegrasyonu ile anlık kripto para fiyatları.
-* **Portföy Yönetimi:** Varlık ekleme, satma ve anlık maliyet hesaplama.
-* **Gelişmiş İstatistikler:** Toplam maliyet, güncel değer ve net Kâr/Zarar gösterimi.
-* **Otomatik Loglama Sistemi:** Kullanıcı işlemlerinin veritabanı seviyesinde arka planda otomatik kaydedilmesi.
-* **Karanlık/Aydınlık Tema:** Ant Design ile modern ve kullanıcı dostu arayüz.
 
- Kullanılan Teknolojiler
+Highlighted Features
 
-Frontend (Ön Yüz):
-- Next.js (React Framework)
-- TypeScript
-- Ant Design (UI Kütüphanesi)
-- Recharts (Grafik Gösterimi)
+-Live Data Stream: Real-time cryptocurrency prices with CoinGecko API integration.
+-Portfolio Management: Adding, selling assets, and real-time cost calculation.
+-Advanced Statistics: Display of total cost, current value, and net Profit/Loss.
+-Automatic Logging System: Automatic background recording of user transactions at the database level.
+-Dark/Light Theme: Modern and user-friendly interface with Ant Design.
 
-Backend (Arka Yüz) & Veritabanı:
-- Node.js & Next.js API Routes
-- `oracledb` (Node.js Oracle Sürücüsü)
-- Oracle Database (XE)
-- **PL/SQL Nesneleri:** Stored Procedures (Saklı Yordamlar), Triggers (Tetikleyiciler), Views (Görünümler)
 
- Veritabanı Mimarisi (PL/SQL)
+Technologies Used
+ Frontend:
+  -Next.js (React Framework)
+  -TypeScript
+  -Ant Design (UI Library)
+  -Recharts (Graphic Display)
+  
+ Backend & Database:
+  -Node.js & Next.js API Routes
+  -oracledb (Node.js Oracle Driver)
+  -Oracle Database (XE)
+  -PL/SQL Objects: Stored Procedures, Triggers, Views
 
-Projede sıradan CRUD işlemlerinin ötesine geçilerek veritabanı özellikleri aktif kullanılmıştır:
-**Views (Görünümler):** Kullanıcı portföy özetleri ve sistem istatistikleri (`VW_KULLANICI_PORTFOYU`, `VW_SISTEM_OZETI`) için kullanıldı.
-**Procedures (Prosedürler):** Alım ve satım işlemleri (`SP_COIN_EKLE`, `SP_COIN_SAT`) veritabanı tarafında güvenli bir şekilde hesaplanarak yazıldı.
-**Triggers (Tetikleyiciler):** Tabloya yapılan her `INSERT`, `UPDATE` ve `DELETE` işleminde araya girilerek `ISLEM_LOGLARI` tablosuna otomatik log atılması sağlandı.
+  
+Database Architecture (PL/SQL)
+Going beyond ordinary CRUD operations in the project, database features were actively used: 
+-Views: Used for user portfolio summaries and system statistics (VW_KULLANICI_PORTFOYU, VW_SISTEM_OZETI). 
+-Procedures: Buy and sell transactions (SP_COIN_EKLE, SP_COIN_SAT) were written by being calculated securely on the database side. 
+-Triggers: Automatic logging to the ISLEM_LOGLARI table was provided by intervening in every INSERT, UPDATE, and DELETE operation performed on the table.
 
-Kurulum ve Çalıştırma
-Test Hesapları
-Uygulamayı test etmek için aşağıdaki varsayılan kullanıcı bilgilerini kullanabilirsiniz:
 
-Kullanıcı Adı: admin | Şifre: 123456
+Installation and Execution Test Accounts You can use the following default user information to test the application:
 
-Kullanıcı Adı: ogrenci | Şifre: 123456
+Username: admin | Password: 123456
+Username: ogrenci | Password: 123456
 
-**1. Veritabanını Hazırlayın:**
-Proje ana dizininde bulunan `veritabani.sql` dosyasının içindeki kodları kopyalayın ve Oracle SQL Developer'da `SYSTEM` kullanıcısı ile çalıştırarak tabloları oluşturun.
-
-**2. Repoyu Klonlayın ve Bağımlılıkları Yükleyin:**
+Prepare the Database: Copy the codes inside the veritabani.sql file located in the main directory of the project and create the tables by executing them with the SYSTEM user in Oracle SQL Developer.
+Clone the Repository and Install Dependencies:
 ```bash
-git clone [https://github.com/KULLANICI_ADIN/PROJE_ADIN.git](https://github.com/KULLANICI_ADIN/PROJE_ADIN.git)
+git clone [https://github.com/noutrexx/finance_tracking_system.git](https://github.com/noutrexx/finance_tracking_system.git)
 cd kurumsal-login
 npm install
 
-```bash
-npm run dev
-git clone [https://github.com/KULLANICI_ADIN/PROJE_ADIN.git](https://github.com/KULLANICI_ADIN/PROJE_ADIN.git)
-cd kurumsal-login
-npm install
