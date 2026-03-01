@@ -51,7 +51,7 @@ Username: ogrenci | Password: 123456
 Prepare the Database: Copy the codes inside the veritabani.sql file located in the main directory of the project and create the tables by executing them with the SYSTEM user in Oracle SQL Developer.
 Clone the Repository and Install Dependencies:
 ```bash
-git clone [https://github.com/noutrexx/finance_tracking_system.git](https://github.com/noutrexx/finance_tracking_system.git)
-cd kurumsal-login
+git clone https://github.com/noutrexx/finance_tracking_system.git
+cd finance_tracking_system
 npm install
-
+npm run dev
