@@ -38,6 +38,7 @@ Test Hesapları
 Uygulamayı test etmek için aşağıdaki varsayılan kullanıcı bilgilerini kullanabilirsiniz:
 
 Kullanıcı Adı: admin | Şifre: 123456
+
 Kullanıcı Adı: ogrenci | Şifre: 123456
 
 **1. Veritabanını Hazırlayın:**
