@@ -4,11 +4,11 @@ Finansal Varlık ve Portföy Yönetim Sistemi
 Bu proje, kullanıcıların kripto para ve altın gibi finansal varlıklarını anlık piyasa fiyatlarıyla takip edebildiği, alım-satım işlemlerini kaydeden ve detaylı kâr/zarar analizi sunan **Full-Stack** bir web uygulamasıdır. 
 
 
-<img width="200" height="200" alt="Ekran görüntüsü 2026-03-01 200934" src="https://github.com/user-attachments/assets/884fbfb6-9161-459c-8f3e-269f75da8197" />
-<img width="200" height="200" alt="Ekran görüntüsü 2026-03-01 200924" src="https://github.com/user-attachments/assets/b8eccba4-61ba-4bfd-b473-045cb9dce3e0" />
-<img width="200" height="200" alt="Ekran görüntüsü 2026-03-01 200943" src="https://github.com/user-attachments/assets/2a45bbb6-31e1-49ae-8442-2e48b7ca99d4" />
-<img width="200" height="200" alt="Ekran görüntüsü 2026-03-01 200839" src="https://github.com/user-attachments/assets/373cb506-21b4-4770-8ca5-3f6a90a74bf9" />
-<img width="200" height="200" alt="Ekran görüntüsü 2026-03-01 200906" src="https://github.com/user-attachments/assets/34329075-459c-4a39-8164-0e29af54e9b5" />
+<img alt="Ekran görüntüsü 2026-03-01 200934" src="https://github.com/user-attachments/assets/884fbfb6-9161-459c-8f3e-269f75da8197" />
+<img alt="Ekran görüntüsü 2026-03-01 200924" src="https://github.com/user-attachments/assets/b8eccba4-61ba-4bfd-b473-045cb9dce3e0" />
+<img alt="Ekran görüntüsü 2026-03-01 200943" src="https://github.com/user-attachments/assets/2a45bbb6-31e1-49ae-8442-2e48b7ca99d4" />
+<img alt="Ekran görüntüsü 2026-03-01 200839" src="https://github.com/user-attachments/assets/373cb506-21b4-4770-8ca5-3f6a90a74bf9" />
+<img alt="Ekran görüntüsü 2026-03-01 200906" src="https://github.com/user-attachments/assets/34329075-459c-4a39-8164-0e29af54e9b5" />
 
 Özellikle **Veritabanı Yönetim Sistemleri** dersi kazanımlarına uygun olarak geliştirilmiş olup; iş mantığının önemli bir kısmı (Business Logic) Oracle PL/SQL kullanılarak veritabanı katmanında çözülmüştür.
 
